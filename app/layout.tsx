@@ -3,6 +3,8 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "@/components/theme-provider"
 import { ModeToggle } from "@/components/toggle";
+import { FloatingNav } from "@/components/ui/floating-navbar";
+import FloatingNavbar from "@/components/FloatingNavbar";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
@@ -29,7 +31,7 @@ export default function RootLayout({
             <div className="absolute right-2 top-2">
             <ModeToggle/>
             </div>
-            
+            <FloatingNavbar/>
             {children}
           </ThemeProvider>
         </body>
