@@ -28,13 +28,12 @@ export default function RootLayout({
             defaultTheme="system"
             enableSystem
             disableTransitionOnChange
-          >
+          > 
+            <FloatingNavbar/>
+            {children}
             <div className="absolute right-2 top-2">
             <ModeToggle/>
             </div >
-            
-            <FloatingNavbar/>
-            {children}
           </ThemeProvider>
         </body>
       </html>
