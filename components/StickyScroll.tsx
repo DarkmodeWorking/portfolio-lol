@@ -90,7 +90,7 @@ description: "As a Fullstack Developer immersed in the MERN stack (MongoDB, Expr
 ];
 export function StickyScrollRevealDemo() {
   return (
-    <div className="sm:p-10 h-[80vh] w-[90vw]" >
+    <div className="sm:p-10 h-[90vh] w-[80vw]" >
       <StickyScroll content={content} />
     </div>
   );
