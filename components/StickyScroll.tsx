@@ -1,5 +1,5 @@
 "use client";
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { StickyScroll } from "./ui/sticky-scroll-reveal";
 import Image from "next/image";
 
@@ -88,10 +88,104 @@ description: "As a Fullstack Developer immersed in the MERN stack (MongoDB, Expr
     ),
   },
 ];
+
+const mobileContent = [
+  {
+    title: "Fullstack Development",
+    description: "As a Fullstack Developer in the MERN stack, I create robust web applications. Learning Django and mastering SQL.",
+    content: (
+      <div className="h-full w-full flex items-center justify-center text-white">
+        <Image
+          src="/fullstack.jpg"
+          width={300}
+          height={300}
+          className="h-full w-full object-cover"
+          priority={true}
+          alt="Full Stack Engineer"
+        />
+      </div>
+    ),
+  },
+  {
+    title: "Machine Learning Enthusiast",
+    description: "Exploring algorithms and model building. Learning TensorFlow, scikit-learn, NumPy, Pandas, Matplotlib, and PyTorch.",
+    content: (
+      <div className="h-full w-full flex items-center justify-center text-white">
+        <Image
+          src="/ml.jpg"
+          width={300}
+          height={300}
+          className="h-full w-full object-cover"
+          alt="Machine learning"
+        />
+      </div>
+    ),
+  },
+  {
+    title: "Version control",
+    description: "Skilled in Git for managing code changes and collaboration on GitHub and GitLab.",
+    content: (
+      <div className="h-full w-full flex items-center justify-center text-white">
+        <Image
+          src="/git.jpg"
+          width={300}
+          height={300}
+          className="h-full w-full object-cover"
+          alt="Git & GitHub"
+        />
+      </div>
+    ),
+  },
+  {
+    title: "Exploring IOS development with Swift",
+    description: "Learning iOS development, mastering Xcode, and creating seamless user experiences for Apple devices.",
+    content: (
+      <div className="h-full w-full flex items-center justify-center text-white">
+        <Image
+          src="/ios.jpg"
+          width={300}
+          height={300}
+          className="h-full w-full object-cover"
+          alt="Swift Developer"
+        />
+      </div>
+    ),
+  },
+  {
+    title: "Musician",
+    description: "Passionate musician playing guitar and ukulele, enhancing creativity and problem-solving skills.",
+    content: (
+      <div className="h-full w-full flex items-center justify-center text-white">
+        <Image
+          src="/music.jpg"
+          width={300}
+          height={300}
+          className="h-full w-full object-cover"
+          alt="Music is life"
+        />
+      </div>
+    ),
+  },
+];
+
+
 export function StickyScrollRevealDemo() {
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth <= 768); // Mobile view for screens <= 768px
+    };
+
+    window.addEventListener("resize", handleResize);
+    handleResize(); // Set initial value
+
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
   return (
-    <div className="sm:p-10 h-[90vh] w-[80vw]" >
-      <StickyScroll content={content} />
+    <div className="sm:p-10 h-[90vh] w-[80vw]">
+      <StickyScroll content={isMobile ? mobileContent : content} />
     </div>
   );
 }
