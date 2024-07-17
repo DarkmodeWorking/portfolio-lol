@@ -4,8 +4,9 @@
 
 @layer base {
   :root {
-    --black: #000000; /* Darkest black */
-    --background: 0 0% 100%;
+    --black: #000000; /* Pitch black */
+    --white: #ffffff; /* Whitest white */
+
     --foreground: 240 10% 3.9%;
 
     --card: 0 0% 100%;
@@ -37,8 +38,9 @@
   }
 
   .dark {
-    --black: #000000; /* Darkest black */
-    --background: 240 10% 3.9%;
+    --black: #000000; /* Pitch black */
+    --white: #ffffff; /* Whitest white */
+
     --foreground: 0 0% 98%;
 
     --card: 240 10% 3.9%;
@@ -73,8 +75,15 @@
     @apply border-border scroll-smooth;
   }
   body {
-    @apply bg-[var(--black)] text-foreground;
+    background-color: var(--white); /* Default to whitest white */
+    color: var(--foreground); /* Default text color */
   }
+
+  .dark body {
+    background-color: var(--black); /* Dark mode background */
+    color: var(--foreground); /* Dark mode text color */
+  }
+
   button {
     @apply active:outline-none;
   }
