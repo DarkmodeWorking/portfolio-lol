@@ -4,6 +4,7 @@
 
 @layer base {
   :root {
+    --black: #000000; /* Darkest black */
     --background: 0 0% 100%;
     --foreground: 240 10% 3.9%;
 
@@ -36,6 +37,7 @@
   }
 
   .dark {
+    --black: #000000; /* Darkest black */
     --background: 240 10% 3.9%;
     --foreground: 0 0% 98%;
 
@@ -68,13 +70,13 @@
 
 @layer base {
   * {
-    @apply border-border !scroll-smooth;
+    @apply border-border scroll-smooth;
   }
   body {
-    @apply bg-background text-foreground;
+    @apply bg-[var(--black)] text-foreground;
   }
   button {
-      active:outline-none;
+    @apply active:outline-none;
   }
 }
 
