@@ -1,5 +1,4 @@
 import { AnimatedTooltipPreview } from "@/components/animatedTooltip";
-import { GridBackgroundDemo } from "@/components/GridBackground";
 import Hero from "@/components/Hero";
 import { StickyScrollRevealDemo } from "@/components/StickyScroll";
 import { StickyScroll } from "@/components/ui/sticky-scroll-reveal";
