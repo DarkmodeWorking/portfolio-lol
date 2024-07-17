@@ -11,9 +11,9 @@ export function CanvasRevealEffectDemo() {
     <section className="w-full py-20">
         <h1 className="heading">My <span> Approach </span></h1>
       <div className="my-20 flex flex-col lg:flex-row items-center justify-center bg-white dark:bg-black w-full gap-4">
-        <Card title="Research and Analysis"
+        <Card title="R&A"
          icon={<AceternityIcon order="Phase 1" />}
-         description=''
+         description='Unveiling Insights: The Foundation of Informed Decision-Making. Research Analysis lays the groundwork for informed decisions.'
          >
           <CanvasRevealEffect
             animationSpeed={5.1}
@@ -22,7 +22,8 @@ export function CanvasRevealEffectDemo() {
         </Card>
         <Card title="Brainstorming"
          icon={<AceternityIcon order="Phase 2"/>}
-         description="hola "
+         description="Igniting Creativity: Where Ideas Flourish. Brainstorming is my creative catalyst.
+"
          >
           <CanvasRevealEffect
             animationSpeed={3}
@@ -36,9 +37,9 @@ export function CanvasRevealEffectDemo() {
           {/* Radial gradient for the cute fade */}
          
         </Card>
-        <Card title="Get to work" 
+        <Card title="Execution" 
         icon={<AceternityIcon order="Phase 3" />} 
-        description=''>
+        description='Turning Vision into Reality: Action in Motion'>
           <CanvasRevealEffect
             animationSpeed={3}
             containerClassName="bg-sky-600"
