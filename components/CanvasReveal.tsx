@@ -42,7 +42,7 @@ export function CanvasRevealEffectDemo() {
         description='Turning Vision into Reality: Action in Motion'>
           <CanvasRevealEffect
             animationSpeed={3}
-            containerClassName="bg-sky-600"
+            containerClassName="bg-sky-900"
             colors={[[125, 211, 252]]}
           />
         </Card>
