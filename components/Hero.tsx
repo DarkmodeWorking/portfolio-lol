@@ -1,15 +1,15 @@
 import React from 'react'
-import { GridBackgroundDemo } from './GridBackground'
+import { BackgroundDemo } from './Background'
 import { StickyScrollRevealDemo } from './StickyScroll'
 import { AnimatedTooltipPreview } from './animatedTooltip'
+import { CanvasRevealEffectDemo } from './CanvasReveal'
+import { TextGenerateEffectDemo } from './TextGenerate'
 const Hero = () => {
   return (
       <>
-          <GridBackgroundDemo/>
+          <BackgroundDemo/>
+          <CanvasRevealEffectDemo/>
         <StickyScrollRevealDemo/>
-        <div className="absolute left-12 -bottom-20 hidden sm:block">
-       <AnimatedTooltipPreview/>
-       </div>
       </>
       
     

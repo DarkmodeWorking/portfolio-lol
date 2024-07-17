@@ -5,7 +5,7 @@ const people = [
   {
     id: 1,
     name: "Nanda Lal Das",
-    designation: "Software Engineer, ML enthusiast",
+    designation: "Software Engineer,ML enthusiast, Musicain",
     image:
     "/profile1.png",
   },
