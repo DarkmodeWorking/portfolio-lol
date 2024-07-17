@@ -10,10 +10,6 @@ const Hero = () => {
           <BackgroundDemo/>
           <CanvasRevealEffectDemo/>
         <StickyScrollRevealDemo/>
-        {/* <div className="hidden sm:block">
-       <AnimatedTooltipPreview/>
-       <TextGenerateEffectDemo/>
-       </div> */}
       </>
       
     

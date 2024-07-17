@@ -20,11 +20,11 @@ export function HeroHighlightDemo() {
         }}
         className="text-2xl px-4 md:text-4xl lg:text-5xl font-bold text-neutral-700 dark:text-white max-w-4xl leading-relaxed lg:leading-snug text-center mx-auto "
       >
-    Unlock the Secrets of Mastery and Conquer the Digital World
+    Unlocking the Secrets of Mastery and Conquering the Digital World
     Mastering Code and Innovation: <br />
         {" "}
         <Highlight className="text-black dark:text-white">
-        Inspired by Timeless Strategies, Epic Tales, and Boundless Creativity
+        🧑‍💻
         </Highlight>
       </motion.h1>
     </HeroHighlight>
