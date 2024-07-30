@@ -11,7 +11,7 @@ const navItems = [
     },
     {
         name:"Connect",
-        link:'/'
+        link:'#contact'
     },
 ]
 const FloatingNavbar = () => {

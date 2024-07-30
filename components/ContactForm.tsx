@@ -3,7 +3,7 @@ import SignupFormDemo from './ui/signup-form-demo'
 
 const ContactForm = () => {
   return (
-    <div>
+    <div id='contact'>
         <SignupFormDemo/>
     </div>
   )
