@@ -8,8 +8,7 @@ const Hero = () => {
   return (
       <>
           <BackgroundDemo/>
-          <CanvasRevealEffectDemo/>
-        <StickyScrollRevealDemo/>
+          <CanvasRevealEffectDemo/> 
       </>
       
     
