@@ -9,7 +9,7 @@ const projects = [
       des: "Explore the wonders of our solar system with this captivating 3D simulation of the planets using Three.js.",
       img: "/eventplanner360.png",
       iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/mongodb.svg", "/next.svg"],
-      link: "https://github.com/adrianhajdin?tab=repositories",
+      link: "https://github.com/Tiklu01/CBTC",
     },
     {
       id: 2,
@@ -25,7 +25,7 @@ const projects = [
       des: "A 3D shirt Customizer app using OpenAI's DALL.E API",
       img: "/shirt.png",
       iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/node.svg"],
-      link: "https://github.com/adrianhajdin/ai_saas_app",
+      link: "https://github.com/Tiklu01/Shirt-Customizer",
     },
     // {
     //   id: 4,
