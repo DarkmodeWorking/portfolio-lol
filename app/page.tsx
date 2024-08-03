@@ -15,7 +15,7 @@ export default function Home() {
           <div className="relative min-h-screen w-full">
             <LampAndMusic />
          <div className="absolute inset-x-0 bottom-10 flex justify-center">
-          <div className="relative z-20 w-full">
+          <div className="relative z-20 w-[35vw]">
           <MusicCard />
          </div>
        </div>
