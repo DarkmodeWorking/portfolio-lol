@@ -5,7 +5,7 @@ import { cn } from "@/lib/utils";
 
 export function LampAndMusic() {
   return (
-    <LampContainer className="relative h-[50vh]">
+    <LampContainer className="relative h-[50vh] ">
       <motion.h1
         initial={{ opacity: 0.5, y: 100 }}
         whileInView={{ opacity: 1, y: 0 }}

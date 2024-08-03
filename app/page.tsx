@@ -12,10 +12,10 @@ export default function Home() {
   return (
     <main className="relatice flex justify-center items-center flex-col overflow-hidden mx-auto sm:px-10 px-5"> 
           <Hero/> 
-          <div className="relative min-h-screen w-full">
+          <div className="relative min-h-screen  w-full">
             <LampAndMusic />
          <div className="absolute inset-x-0 bottom-10 flex justify-center">
-          <div className="relative z-20 w-[35vw]">
+          <div className="relative z-20 sm:w-[35vw] lg:w-[35vw] ">
           <MusicCard />
          </div>
        </div>
