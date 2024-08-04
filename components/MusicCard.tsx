@@ -95,7 +95,7 @@ export function MusicCard() {
             <motion.div
               layoutId={`card-${active.title}-${id}`}
               ref={ref}
-              className="w-full max-w-[500px] h-full md:h-fit md:max-h-[90%] flex flex-col bg-white dark:bg-neutral-900 sm:rounded-3xl overflow-hidden"
+              className="w-full max-w-[475px] h-full md:h-fit md:max-h-[75%] flex flex-col bg-white dark:bg-neutral-900 sm:rounded-3xl overflow-hidden"
             >
               <motion.div layoutId={`image-${active.title}-${id}`}>
                 <Image
@@ -108,8 +108,8 @@ export function MusicCard() {
                 />
               </motion.div>
 
-              <div>
-                <div className="flex justify-between items-start p-4">
+              <div >
+                <div className="flex justify-between items-start p-3">
                   <div>
                     <motion.h3
                       layoutId={`title-${active.title}-${id}`}
@@ -119,7 +119,7 @@ export function MusicCard() {
                     </motion.h3>
                     <motion.p
                       layoutId={`description-${active.description}-${id}`}
-                      className="text-neutral-600 dark:text-neutral-400"
+                      className="text-neutral-600 dark:text-neutral-400 "
                     >
                       {active.description}
                     </motion.p>
@@ -133,7 +133,7 @@ export function MusicCard() {
                     {isPlaying ? 'Pause' : active.ctaText}
                   </motion.button>
                 </div>
-                <div className="pt-4 relative px-4">
+                <div className="pt-1 relative px-4 py-0">
                   <motion.div
                     layout
                     initial={{ opacity: 0 }}
@@ -146,15 +146,48 @@ export function MusicCard() {
                       : active.content}
                   </motion.div>
                 </div>
-                <div className="p-4">
-                  <input
-                    type="range"
-                    min={0}
-                    max={duration}
-                    value={currentTime}
-                    onChange={handleSliderChange}
-                    className="w-full"
-                  />
+                <div className="pl-4 pr-4 pb-1 relative pt-0 mt-0 ">
+                <input
+                      type="range"
+                      min={0}
+                      max={duration}
+                      value={currentTime}
+                      onChange={handleSliderChange}
+                      className="w-full mt-0 pt-0 bg-gray-200 border border-green-500 rounded-lg appearance-none"
+                      style={{
+                        WebkitAppearance: 'none', /* For WebKit browsers */
+                        appearance: 'none', /* For other browsers */
+                        height: '8px',
+                        background: '#1DB954',
+                        borderRadius: '5px',
+                        transition: 'background 0.3s ease',
+                      }}
+                    />
+                    <style>
+                      {`
+                        input[type="range"]::-webkit-slider-thumb {
+                          -webkit-appearance: none;
+                          appearance: none;
+                          width: 20px;
+                          height: 20px;
+                          background: #fff;
+                          border: 2px solid #1DB954;
+                          border-radius: 50%;
+                          cursor: pointer;
+                          transition: background 0.7s ease;
+                        }
+
+                        input[type="range"]::-moz-range-thumb {
+                          width: 20px;
+                          height: 20px;
+                          background: #fff;
+                          border: 2px solid #1DB954;
+                          border-radius: 50%;
+                          cursor: pointer;
+                          transition: background 0.3s ease;
+                        }
+                      `}
+                    </style>
                   <div className="flex justify-between text-xs text-neutral-600 dark:text-neutral-400">
                     <span>{formatTime(currentTime)}</span>
                     <span>{formatTime(duration)}</span>
