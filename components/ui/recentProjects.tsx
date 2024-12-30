@@ -3,8 +3,24 @@ import { div } from 'three/examples/jsm/nodes/Nodes.js';
 import { PinContainer } from './3d-pin';
 import { link } from 'fs';
 const projects = [
+  {
+    id: 1,
+    title: "TechVerse 3.0",
+    des: "Website for college's Technical Fest.",
+    img: "/techverse.png",
+    iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/mongodb.svg", "/next.svg"],
+    link: "https://tech-verse.tech/",
+  },
+  {
+    id: 2,
+    title: "ExZ2025",
+    des: "website for college's annual cultural fest.",
+    img: "/exz.png",
+    iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/mongodb.svg"],
+    link: "https://gnitculturalfest.com/",
+  },
     {
-      id: 1,
+      id: 3,
       title: "Event management platform",
       des: "Explore the wonders of our solar system with this captivating 3D simulation of the planets using Three.js.",
       img: "/eventplanner360.png",
@@ -12,7 +28,7 @@ const projects = [
       link: "https://github.com/Tiklu01/CBTC",
     },
     {
-      id: 2,
+      id: 4,
       title: "Car Price Prediction model",
       des: "this is a car price prediction model using rear, regression, and custom cost function and gradient decent mainly used for learning purposes",
       img: "/ml.png",
@@ -20,7 +36,7 @@ const projects = [
       link: "https://github.com/Tiklu01/carPricePredictionLinearRegression/blob/main/OutliersRemovedmodifiedCarsPricePrediction.ipynb",
     },
     {
-      id: 3,
+      id: 5,
       title: "Shirt Customizer",
       des: "A 3D shirt Customizer app using OpenAI's DALL.E API",
       img: "/shirt.png",
