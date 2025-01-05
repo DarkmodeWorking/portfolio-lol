@@ -136,21 +136,21 @@ const mobileContent = [
       </div>
     ),
   },
-  {
-    title: "Exploring IOS development with Swift",
-    description: "Learning iOS development, mastering Xcode, and creating seamless user experiences for Apple devices.",
-    content: (
-      <div className="h-full w-full flex items-center justify-center text-white">
-        <Image
-          src="/ios.jpg"
-          width={300}
-          height={300}
-          className="h-full w-full object-cover"
-          alt="Swift Developer"
-        />
-      </div>
-    ),
-  },
+  // {
+  //   title: "Exploring IOS development with Swift",
+  //   description: "Learning iOS development, mastering Xcode, and creating seamless user experiences for Apple devices.",
+  //   content: (
+  //     <div className="h-full w-full flex items-center justify-center text-white">
+  //       <Image
+  //         src="/ios.jpg"
+  //         width={300}
+  //         height={300}
+  //         className="h-full w-full object-cover"
+  //         alt="Swift Developer"
+  //       />
+  //     </div>
+  //   ),
+  // },
   {
     title: "Musician",
     description: "Passionate musician playing guitar and ukulele, enhancing creativity and problem-solving skills.",
