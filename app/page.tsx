@@ -7,6 +7,7 @@ import { RecentProjects } from "@/components/ui/recentProjects";
 import { StickyScroll } from "@/components/ui/sticky-scroll-reveal";
 import { LampAndMusic } from "@/components/ui/lamp";
 import Image from "next/image";
+import { TimelineJourney } from "@/components/TimelineJourney";
 
 export default function Home() {
   return (
@@ -21,6 +22,7 @@ export default function Home() {
        </div>
         </div>
           <RecentProjects/>
+          <TimelineJourney/>
           <StickyScrollRevealDemo/>
           <ContactForm/> 
     </main>
