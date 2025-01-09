@@ -7,7 +7,7 @@ const navItems = [
     },
     {
         name:"About",
-        link:'/'
+        link:'#about'
     },
     {
         name:"Connect",

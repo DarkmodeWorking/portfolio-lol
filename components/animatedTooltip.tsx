@@ -7,7 +7,7 @@ const people = [
     name: "Nanda Lal Das",
     designation: "Software Engineer,ML enthusiast, Musicain",
     image:
-    "/profile1.png",
+    "/Nanda00.jpg",
   },
  
  

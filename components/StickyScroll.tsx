@@ -54,22 +54,22 @@ description: "As a Fullstack Developer immersed in the MERN stack (MongoDB, Expr
       </div>
     ),
   },
-  {
-    title: "Exploring IOS development with Swift",
-    description:
-    "Currently  learning iOS development on side, I am acquiring skills in building applications for Apple devices. This journey involves understanding Apple's ecosystem, mastering Xcode, and learning the principles of mobile app design and development. My goal is to create seamless and intuitive user experiences for iOS users.",
-  content: (
-        <div className="h-full w-full  flex items-center justify-center text-white">
-        <Image
-          src="/ios.jpg"
-          width={300}
-          height={300}
-          className="h-full w-full object-cover"
-          alt="Swift Developer"
-        />
-      </div>
-    ),
-  },
+  // {
+  //   title: "Exploring IOS development with Swift",
+  //   description:
+  //   "Currently  learning iOS development on side, I am acquiring skills in building applications for Apple devices. This journey involves understanding Apple's ecosystem, mastering Xcode, and learning the principles of mobile app design and development. My goal is to create seamless and intuitive user experiences for iOS users.",
+  // content: (
+  //       <div className="h-full w-full  flex items-center justify-center text-white">
+  //       <Image
+  //         src="/ios.jpg"
+  //         width={300}
+  //         height={300}
+  //         className="h-full w-full object-cover"
+  //         alt="Swift Developer"
+  //       />
+  //     </div>
+  //   ),
+  // },
   {
     title: "Musician",
     description:
