@@ -14,7 +14,7 @@ export function TimelineJourney() {
           </p>
           <div className="grid grid-cols-2 gap-4">
             <Image
-              src="/DSC_5539.JPG"
+              src="/DSC_5539.JPEG"
               alt="startup template"
               width={500}
               height={500}
