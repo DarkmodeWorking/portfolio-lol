@@ -276,10 +276,10 @@ export const CloseIcon = () => {
 const cards = [
   {
     description: "A show of my music",
-    title: "Untill I Found You Uke Cover",
+    title: "Untill I Found You ",
     src: "/uke1.jpeg",
     ctaText: "Play",
-    audio: "untill-i-found-u.m4a", // Filename in public/audio folder
+    audio: "uifuguitar.m4a", // Filename in public/audio folder
     content: () => (
       <p>
        This is a ukulele cover of <b>Untill i found you</b> performed by me. The original song was sung by <b>Stephen Sanchez</b>.
