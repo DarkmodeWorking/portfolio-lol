@@ -5,7 +5,6 @@ const slugs = [
   "javascript",
   "swift",
   "react",
-  "flutter",
   "ios",
   "html5",
   "css3",
@@ -25,11 +24,14 @@ const slugs = [
   "jupyter",
   "tailwindcss",
   "django",
+  "linux",
+  "shell",
+  "macos",
 ]
 
 export function Skills() {
   return (
-    <div className="relative flex size-full max-w-lg items-center justify-center overflow-hidden rounded-lg border bg-background px-20 pb-20 pt-8 ">
+    <div className="relative flex size-full max-w-lg items-center justify-center overflow-hidden rounded-lg  bg-background px-20 pb-20 pt-8 ">
       <IconCloud iconSlugs={slugs} />
     </div>
   )
