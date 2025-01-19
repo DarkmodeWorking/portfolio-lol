@@ -19,14 +19,14 @@ export default function Home() {
             <Robo/>
           </div>
           
-          <div className="relative min-h-screen  w-full">
+          {/* <div className="relative min-h-screen  w-full">
             <LampAndMusic />
          <div className="absolute inset-x-0 bottom-10 flex justify-center">
           <div className="relative z-20 sm:w-[35vw] lg:w-[35vw] ">
           <MusicCard />
          </div>
        </div>
-        </div>
+        </div> */}
           <RecentProjects/>
           <Skills/>
           <TimelineJourney/>
