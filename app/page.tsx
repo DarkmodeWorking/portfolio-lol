@@ -3,7 +3,7 @@ import ContactForm from "@/components/ContactForm";
 import Hero from "@/components/Hero";
 import { MusicCard } from "@/components/MusicCard";
 import { StickyScrollRevealDemo } from "@/components/StickyScroll";
-import { RecentProjects } from "@/components/ui/recentProjects";
+import { RecentProjects } from "@/components/recentProjects";
 import { StickyScroll } from "@/components/ui/sticky-scroll-reveal";
 import { LampAndMusic } from "@/components/ui/lamp";
 import Image from "next/image";
